@@ -1,0 +1,15 @@
+.nav-bar{
+    background-color: black;
+    display: flex;
+    height: 44px;
+}
+.nav-bar-div{
+    margin-left: 750px;
+    margin-right: 550px;
+}
+.nav-link{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 0 40px 0 40px;
+}

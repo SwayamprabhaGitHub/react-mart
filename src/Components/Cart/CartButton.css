@@ -1,0 +1,11 @@
+.cart-btn{
+    display: inline;
+    font-size: 25px;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.cart-btn:hover{
+    background-color: gray;
+    cursor: pointer;
+}
