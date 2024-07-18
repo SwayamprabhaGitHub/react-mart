@@ -1,9 +1,13 @@
 import React from "react";
 import "./CartButton.css";
 
-const CartButton = () => {
+const CartButton = (props) => {
   return (
-    <button className="cart-btn" type="button">
+    <button
+      className="cart-btn"
+      type="button"
+      onClick={() => props.onShowCart()}
+    >
       Cart ({0})
     </button>
   );

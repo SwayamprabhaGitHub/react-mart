@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import CartButton from "../Cart/CartButton";
 import "./Navbar.css";
-
+import Cart from "../Cart/Cart";
 
 const Navbar = () => {
-    return <nav className="nav-bar">
-        <div className="nav-bar-div">
-        <a className="nav-link" href="/">Home</a>
-        <a className="nav-link" href="/">Store</a>
-        <a className="nav-link" href="/">About</a>
-        </div>
-        <CartButton></CartButton>
-    </nav>
-}
+  const [showCart, setShowCart] = useState(false);
 
-export default Navbar
+  const showCartHandler = () => {
+    setShowCart(!showCart);
+  };
+  return (
+    <nav className="nav-bar">
+      <div className="nav-bar-div">
+        <a className="nav-link" href="/">
+          Home
+        </a>
+        <a className="nav-link" href="/">
+          Store
+        </a>
+        <a className="nav-link" href="/">
+          About
+        </a>
+      </div>
+      <CartButton onShowCart={showCartHandler} />
+      {showCart && <Cart onShowCart={showCartHandler} />}
+    </nav>
+  );
+};
+
+export default Navbar;
