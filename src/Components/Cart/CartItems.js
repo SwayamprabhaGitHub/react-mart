@@ -1,30 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./CartItems.css";
+import CartContext from "../store/cart-context";
 
 const CartItems = () => {
-  const cartElements = [
-    {
-      title: "Colors",
-      price: 100,
-      imageUrl:
-        "https://prasadyash2411.github.io/ecom-website/img/Album%201.png",
-      quantity: 1,
-    },
-    {
-      title: "Black and white Colors",
-      price: 50,
-      imageUrl:
-        "https://prasadyash2411.github.io/ecom-website/img/Album%202.png",
-      quantity: 1,
-    },
-    {
-      title: "Yellow and Black Colors",
-      price: 70,
-      imageUrl:
-        "https://prasadyash2411.github.io/ecom-website/img/Album%203.png",
-      quantity: 1,
-    },
-  ];
+  const cartCnxt = useContext(CartContext);
+  if (cartCnxt.list.length === 0) {
+    return <h2 className="cart-empty">Cart is EMPTY!</h2>;
+  }
   return (
     <section className="cart-items">
       <table>
@@ -35,7 +17,7 @@ const CartItems = () => {
             <th>QUANTITY</th>
             <th></th>
           </tr>
-          {cartElements.map((ele, i) => {
+          {cartCnxt.list.map((ele, i) => {
             return (
               <tr key={i}>
                 <td className="cart-item-title">

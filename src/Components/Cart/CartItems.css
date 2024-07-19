@@ -34,3 +34,8 @@
     cursor: pointer;
     background-color: #920b0b;
   }
+
+  .cart-empty {
+    text-align: center;
+    color: #920b0b;
+  }

@@ -2,10 +2,11 @@ import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Products from "./Components/Products/Products";
+import CartProvider from "./Components/store/cartProvider";
 
 const App = () => {
   return (
-    <React.Fragment>
+    <CartProvider>
       <header>
         <Navbar />
       </header>
@@ -13,7 +14,7 @@ const App = () => {
         <Products />
       </main>
       <footer></footer>
-    </React.Fragment>
+    </CartProvider>
   );
 };
 
