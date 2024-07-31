@@ -1,0 +1,52 @@
+.ticketsection {
+    display: inline-block;
+}
+
+.ticketsection h1 {
+    border: 2px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 0;
+}
+
+.tickettable {
+    width: 1000px;
+}
+
+.showdate {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.showplace {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #777;
+    text-align: left;
+}
+
+.showcity {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #777;
+    text-align: left;
+}
+
+.showbutton {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.ticketbutton {
+    background-color: rgb(73, 185, 255);
+    padding: 7px 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+

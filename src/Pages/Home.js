@@ -1,7 +1,10 @@
 import React from "react";
+import Tickets from "../Components/Tickets/Tickets";
 
 const Home = () => {
-  return <p>Welcome to Home Page</p>;
+  return <main>
+    <Tickets />
+  </main>;
 };
 
 export default Home;
