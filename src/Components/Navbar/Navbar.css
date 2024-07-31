@@ -7,9 +7,13 @@
     margin-left: 750px;
     margin-right: 550px;
 }
-.nav-link{
+.nav-bar-div a{
     color: white;
     font-size: 30px;
     text-decoration: none;
     margin: 0 40px 0 40px;
+}
+.nav-bar-div a:hover,
+.nav-bar-div a.active {
+    text-decoration: underline;
 }

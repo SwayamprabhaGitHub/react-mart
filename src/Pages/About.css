@@ -1,0 +1,25 @@
+.about {
+    font-family: cursive;
+    font-size: 3em;
+}
+
+.aboutpara {
+    display: inline-flexbox;
+    width: 1400px;
+    position: relative;
+    left: 220px;
+}
+
+.aboutpara p {
+    text-align: justify;
+    color: #777;
+}
+
+.aboutpara img {
+    margin: 20px 50px;
+    height: 300px;
+    width: 400px;
+    float: left;
+    object-fit: contain;
+
+}

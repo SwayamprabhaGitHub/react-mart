@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import CartButton from "../Cart/CartButton";
 import "./Navbar.css";
 import Cart from "../Cart/Cart";
@@ -12,15 +13,15 @@ const Navbar = () => {
   return (
     <nav className="nav-bar">
       <div className="nav-bar-div">
-        <a className="nav-link" href="/">
+        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/">
           Home
-        </a>
-        <a className="nav-link" href="/">
+        </NavLink>
+        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/store">
           Store
-        </a>
-        <a className="nav-link" href="/">
+        </NavLink>
+        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/about">
           About
-        </a>
+        </NavLink>
       </div>
       <CartButton onShowCart={showCartHandler} />
       {showCart && <Cart onShowCart={showCartHandler} />}
