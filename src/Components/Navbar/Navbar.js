@@ -22,6 +22,9 @@ const Navbar = () => {
         <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/about">
           About
         </NavLink>
+        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/contactUs">
+          Contact Us
+        </NavLink>
       </div>
       <CartButton onShowCart={showCartHandler} />
       {showCart && <Cart onShowCart={showCartHandler} />}
