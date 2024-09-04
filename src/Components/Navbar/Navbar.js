@@ -13,16 +13,16 @@ const Navbar = () => {
   return (
     <nav className="nav-bar">
       <div className="nav-bar-div">
-        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/">
+        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="">
           Home
         </NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/store">
+        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="store">
           Store
         </NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/about">
+        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="about">
           About
         </NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/contactUs">
+        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="contactUs">
           Contact Us
         </NavLink>
       </div>
