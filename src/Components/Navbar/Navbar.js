@@ -26,6 +26,9 @@ const Navbar = () => {
           Contact Us
         </NavLink>
       </div>
+      <NavLink className={({isActive}) => isActive ? 'active' : ''} to="login">
+          Login
+        </NavLink>
       <CartButton onShowCart={showCartHandler} />
       {showCart && <Cart onShowCart={showCartHandler} />}
     </nav>

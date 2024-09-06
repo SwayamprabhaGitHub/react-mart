@@ -5,7 +5,7 @@
 }
 .nav-bar-div{
     margin-left: 650px;
-    margin-right: 600px;
+    margin-right: 500px;
 }
 .nav-bar-div a{
     color: white;
@@ -16,4 +16,11 @@
 .nav-bar-div a:hover,
 .nav-bar-div a.active {
     text-decoration: underline;
+}
+
+.nav-bar a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 35px;
 }
