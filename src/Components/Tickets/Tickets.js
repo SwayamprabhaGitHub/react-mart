@@ -17,7 +17,7 @@ const Tickets = () => {
       <table className="tickettable">
         <tbody>
             {shows.map((show) => {
-                return <tr className="showrow">
+                return <tr key={Math.random()} className="showrow">
                     <td className="showdate">{show.date}</td>
                     <td className="showcity">{show.city}</td>
                     <td className="showplace">{show.place}</td>

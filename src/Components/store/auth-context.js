@@ -2,8 +2,9 @@ import React from "react";
 
 const AuthContext = React.createContext({
     token: '',
+    mailId: '',
     isLoggedin: false,
-    login: (token) => {},
+    login: (token, email) => {},
     logout: () => {}
 })
 

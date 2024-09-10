@@ -36,7 +36,7 @@ const LoginPage = () => {
         if (response.ok) {
           const data = await response.json();
           console.log(data);
-          authCtx.login(data.idToken);
+          authCtx.login(data.idToken, data.email);
           navigate('/store');
         } else {
             const data = await response.json();
